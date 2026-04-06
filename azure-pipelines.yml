@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: Token1
+pool: AgentPool
   
 
 steps:
