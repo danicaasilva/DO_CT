@@ -9,12 +9,11 @@ trigger:
 pool: AgentPool
   
 steps:
-- task: Maven@3
+- task: Maven@4
   inputs:
     mavenPomFile: 'demo/pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
-    jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'compile'
