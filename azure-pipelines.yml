@@ -9,7 +9,7 @@ trigger:
 pool: AgentPool
   
 steps:
-- task: Maven@4
+- task: Maven@3
   inputs:
     mavenPomFile: 'demo/pom.xml'
     mavenOptions: '-Xmx3072m'
