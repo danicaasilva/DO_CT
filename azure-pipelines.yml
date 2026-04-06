@@ -6,14 +6,12 @@
 trigger:
 - main
 
-pool: AgentPool
+pool: Agent
   
 steps:
-- task: Maven@3
+- task: Maven@4
   inputs:
     mavenPomFile: 'demo/pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'compile'
